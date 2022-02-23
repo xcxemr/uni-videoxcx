@@ -20,9 +20,11 @@
 			</u-row>
 		</view>
 		<view class="parse" v-show="parseDone">
-
 			<video class="parse_video" :src="videoInfo.url" :poster="videoInfo.cover" v-show="ifAudit()"></video>
-
+			<view v-if="!ifAudit()">解析成功，以下为视频封面图，请手动复制无水印连接到浏览器查看。</view>
+			<view class="img" v-if="!ifAudit()">
+				<u--image :showLoading="true" :src="videoInfo.cover"></u--image>
+			</view>
 			<view class="btn_group">
 				<u-row :gutter="25">
 					<u-col :span="6">
@@ -268,6 +270,11 @@
 
 		.parse {
 			margin-top: 15px;
+			
+			.img{
+				display: flex;
+				justify-content: center;
+			}
 
 			.parse_video {
 				width: 100%;

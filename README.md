@@ -2,7 +2,7 @@
 
 使用uniapp开发抖音去水印小程序。
 
-# 预览
+## 预览
 ![ewm](https://github.com/xcxemr/uni-videoxcx/raw/master/screenshot/ewm.jpg)
 
 <img src="https://github.com/xcxemr/uni-videoxcx/raw/master/screenshot/1.jpg" style="width:300px;heitht:100%" />
@@ -12,5 +12,7 @@
 <img src="https://github.com/xcxemr/uni-videoxcx/raw/master/screenshot/3.jpg" style="width:300px;heitht:100%" />
 
 
-# 后端
+## 后端
 [https://github.com/xcxemr/videoxcx](https://github.com/xcxemr/videoxcx)
+
+> 仅供学习参考
